@@ -1,0 +1,14 @@
+:root {
+    --black: #322625;
+    --grey: #ebebeb;
+    --blue: #c0e3e5;
+    --pink: #f2b0d9;
+    --yello: #fdc936;
+  }
+  @font-face {
+    font-family: "Neutra Text";
+    src: url("./Assets/Fonts/neutra-text-font/NeutraText-Book.otf") format("opentype");
+  }
+  html, body {
+    font-family: "Neutra Text" !important;
+  }

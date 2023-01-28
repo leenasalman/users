@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import UsersTable from "../components/UsersTable";
+import AuthContext from "../state/auth-context";
 
 function users() {
   return (
-    <div>users</div>
-  )
+    <AuthContext.Consumer>
+      {/* add table to display users data */}
+      {(ctx) => {
+        return <UsersTable users={ctx.users} />;
+      }}
+    </AuthContext.Consumer>
+  );
 }
 
-export default users
+export default users;
